@@ -4,10 +4,10 @@
   "description": "my app",
   "main": "server.ts",
   "scripts": {
-    "buid": "tsc",
-    "dev": "ts-node ./src/server.ts",
-    "start": "nodemon ./dist/server.js",
-    "prod": "npm run build && npm run start",
+    "build": "tsc",
+    "dev": "./node_modules/nodemon/bin/nodemon.js",
+    "start": "ts-node ./src/server.ts",
+    "prod": "npm run build && ts-node ./dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
