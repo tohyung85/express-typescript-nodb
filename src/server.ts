@@ -1,6 +1,5 @@
 import app from './app';
-const PORT = 8000;
 
-app.listen(PORT, () => {
-  console.log('Express App is running');
+app.listen(process.env.PORT, () => {
+  console.log(`Express App is running on ${process.env.PORT}`);
 });
